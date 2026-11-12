@@ -1,23 +1,67 @@
 {
   "format": 1,
-  "title": { "en": "Scaefy themes", "tr": "Scaefy temalar", "zh": "Scaefy 主题" },
-  "description": { "en": "Light color themes for DeepSeek Harness by Scaefy.", "tr": "Scaefy tarafından DeepSeek Harness için açık renk temaları.", "zh": "Scaefy 为 DeepSeek Harness 提供的浅色主题。" },
+  "title": {
+    "en": "Scaefy themes",
+    "tr": "Scaefy temalar",
+    "zh": "Scaefy \u4e3b\u9898"
+  },
+  "description": {
+    "en": "Light color themes for DeepSeek Harness by Scaefy.",
+    "tr": "Scaefy taraf\u0131ndan DeepSeek Harness i\u00e7in a\u00e7\u0131k renk temalar\u0131.",
+    "zh": "Scaefy \u4e3a DeepSeek Harness \u63d0\u4f9b\u7684\u6d45\u8272\u4e3b\u9898\u3002"
+  },
   "metadata": {
-    "categories": { "themes": { "title": { "en": "Themes", "tr": "Temalar", "zh": "主题" } } },
-    "labels": { "theme": { "title": { "en": "Theme", "tr": "Tema", "zh": "主题" } }, "light": { "title": { "en": "Light", "tr": "Açık", "zh": "浅色" } } }
+    "categories": {
+      "themes": {
+        "title": {
+          "en": "Themes",
+          "tr": "Temalar",
+          "zh": "\u4e3b\u9898"
+        }
+      }
+    },
+    "labels": {
+      "theme": {
+        "title": {
+          "en": "Theme",
+          "tr": "Tema",
+          "zh": "\u4e3b\u9898"
+        }
+      },
+      "light": {
+        "title": {
+          "en": "Light",
+          "tr": "A\u00e7\u0131k",
+          "zh": "\u6d45\u8272"
+        }
+      }
+    }
   },
   "plugins": [
     {
       "name": "@scaefy/dsh-light-themes",
-      "title": { "en": "Scaefy light themes", "tr": "Scaefy açık temalar", "zh": "Scaefy 浅色主题" },
-      "description": { "en": "27 curated light color themes for DeepSeek Harness.", "tr": "DeepSeek Harness için 27 seçkin açık renk teması.", "zh": "为 DeepSeek Harness 提供的 27 款浅色主题。" },
+      "title": {
+        "en": "Scaefy light themes",
+        "tr": "Scaefy a\u00e7\u0131k temalar",
+        "zh": "Scaefy \u6d45\u8272\u4e3b\u9898"
+      },
+      "description": {
+        "en": "27 curated light color themes for DeepSeek Harness.",
+        "tr": "DeepSeek Harness i\u00e7in 27 se\u00e7kin a\u00e7\u0131k renk temas\u0131.",
+        "zh": "\u4e3a DeepSeek Harness \u63d0\u4f9b\u7684 27 \u6b3e\u6d45\u8272\u4e3b\u9898\u3002"
+      },
       "icon": "icon.svg",
       "author": "Scaefy",
       "homepage": "https://github.com/fatihtoprakk/dsh-scaefy-light-themes",
-      "repository": { "url": "https://github.com/fatihtoprakk/dsh-scaefy-light-themes" },
+      "repository": {
+        "url": "https://github.com/fatihtoprakk/dsh-scaefy-light-themes"
+      },
       "metadata": {
         "category": "themes",
-        "labels": ["theme", "light"]
+        "labels": [
+          "theme",
+          "light"
+        ]
       },
       "versions": [
         {
@@ -26,9 +70,11 @@
           "source": {
             "type": "git",
             "url": "https://github.com/fatihtoprakk/dsh-scaefy-light-themes",
-            "commit": "c707352c69ea6b2098eebaf6d92a7bdc1c45e1d6"
+            "commit": "41a05e46749bc6490f53ce29368a93fe5f02d06a"
           },
-          "engines": { "dsh": ">=0.2.0-rc.2" }
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
         }
       ]
     }
