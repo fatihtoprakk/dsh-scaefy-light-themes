@@ -1,0 +1,3 @@
+- insert:
+    - id: scaefy-light-themes
+      name: '@scaefy/dsh-light-themes'

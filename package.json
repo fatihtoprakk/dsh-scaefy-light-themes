@@ -1,0 +1,44 @@
+{
+  "name": "@scaefy/dsh-light-themes",
+  "version": "1.0.0",
+  "description": "A curated collection of 27 light color themes for DeepSeek Harness, adapted from the Scaefy OpenCode light themes.",
+  "private": false,
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatihtoprakk/dsh-scaefy-light-themes.git"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-theme"]
+    }
+  }
+}
