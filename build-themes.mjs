@@ -154,6 +154,11 @@ for (const def of defs) {
   lines.push(`        disposers.push(ctx.theme.register(${JSON.stringify(def)}));`);
   lines.push(`        themeIds.push(${JSON.stringify(def.id)});`);
 }
+lines.push(`        // Restore the last selected theme (third-party themes are not persisted by DSH itself).`);
+lines.push(`        try {`);
+lines.push(`          const saved = (typeof localStorage !== 'undefined') ? localStorage.getItem('scaefy.selectedTheme') : null;`);
+lines.push(`          if (saved && themeIds.indexOf(saved) !== -1) { try { ctx.theme.setTheme(saved); } catch (e) {} }`);
+lines.push(`        } catch (e) {}`);
 lines.push(`        // Best-effort settings row so users can pick a theme; never block theme registration.`);
 lines.push(`        try {`);
 lines.push(`          const Picker = function ScaefyThemePicker() {`);
@@ -164,7 +169,7 @@ lines.push(`              return () => { off(); };`);
 lines.push(`            }, []);`);
 lines.push(`            return React.createElement('div', { style: { display: 'flex', alignItems: 'center', gap: '8px' } },`);
 lines.push(`              React.createElement('span', null, 'Scaefy theme'),`);
-lines.push(`              React.createElement('select', { value: pref, onChange: (e) => { try { ctx.theme.setTheme(e.target.value); } catch (err) {} } },`);
+lines.push(`              React.createElement('select', { value: pref, onChange: (e) => { const v = e.target.value; try { ctx.theme.setTheme(v); } catch (err) {} try { if (typeof localStorage !== 'undefined') localStorage.setItem('scaefy.selectedTheme', v); } catch (err) {} } },`);
 lines.push(`                themeIds.map((id) => React.createElement('option', { key: id, value: id }, id))`);
 lines.push(`              )`);
 lines.push(`            );`);
