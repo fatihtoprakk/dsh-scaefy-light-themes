@@ -1,0 +1,36 @@
+{
+  "format": 1,
+  "title": { "en": "Scaefy themes", "tr": "Scaefy temalar", "zh": "Scaefy 主题" },
+  "description": { "en": "Light color themes for DeepSeek Harness by Scaefy.", "tr": "Scaefy tarafından DeepSeek Harness için açık renk temaları.", "zh": "Scaefy 为 DeepSeek Harness 提供的浅色主题。" },
+  "metadata": {
+    "categories": { "themes": { "title": { "en": "Themes", "tr": "Temalar", "zh": "主题" } } },
+    "labels": { "theme": { "title": { "en": "Theme", "tr": "Tema", "zh": "主题" } }, "light": { "title": { "en": "Light", "tr": "Açık", "zh": "浅色" } } }
+  },
+  "plugins": [
+    {
+      "name": "@scaefy/dsh-light-themes",
+      "title": { "en": "Scaefy light themes", "tr": "Scaefy açık temalar", "zh": "Scaefy 浅色主题" },
+      "description": { "en": "27 curated light color themes for DeepSeek Harness.", "tr": "DeepSeek Harness için 27 seçkin açık renk teması.", "zh": "为 DeepSeek Harness 提供的 27 款浅色主题。" },
+      "icon": "icon.svg",
+      "author": "Scaefy",
+      "homepage": "https://github.com/fatihtoprakk/dsh-scaefy-light-themes",
+      "repository": { "url": "https://github.com/fatihtoprakk/dsh-scaefy-light-themes" },
+      "metadata": {
+        "category": "themes",
+        "labels": ["theme", "light"]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1794487071,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/fatihtoprakk/dsh-scaefy-light-themes",
+            "commit": "c707352c69ea6b2098eebaf6d92a7bdc1c45e1d6"
+          },
+          "engines": { "dsh": ">=0.2.0-rc.2" }
+        }
+      ]
+    }
+  ]
+}
