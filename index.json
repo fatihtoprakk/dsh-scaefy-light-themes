@@ -70,7 +70,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/fatihtoprakk/dsh-scaefy-light-themes",
-            "commit": "af343977f636c4a27d3dd3155fc9df534adbce6b"
+            "commit": "b69f28349196414ed06d75a9cc81c7ac6855538b"
           },
           "engines": {
             "dsh": ">=0.2.0-rc.2"
